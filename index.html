@@ -18,6 +18,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- header -->
@@ -32,6 +36,10 @@
           <li><a href="#contact">contact</a></li>
           <li><a href="#footer">About us</a></li>
         </ul>
+        <div class="icons">
+          <i class="icon fas fa-moon"></i>
+          <i class="burger-icon fa fa-navicon"></i>
+        </div>
       </div>
     </header>
     <!-- landing -->
@@ -61,32 +69,57 @@
       <div class="container">
         <h2 class="main-title">work showcase.</h2>
         <ul class="shuffle">
-          <li>All</li>
+          <li class="active">All</li>
           <li>branding</li>
           <li>illustration</li>
           <li>web</li>
-          <li>
-            newest first <span><i class="fas fa-angle-down"></i></span>
-          </li>
+          <div class="filter">
+            <div class="title">
+              newest first <span><i class="fas fa-angle-down"></i></span>
+            </div>
+            <div class="drop-down">
+              <div class="newest">newest first</div>
+              <div class="latest">latest first</div>
+            </div>
+          </div>
         </ul>
         <div class="images">
-          <div class="image">
+          <div class="image branding">
             <img src="images/work-1.jpg" alt="" />
           </div>
-          <div class="image problem">
+          <div class="image branding">
             <img class="special" src="images/work-2.jpg" alt="" />
           </div>
-          <div class="image">
+          <div class="image branding">
             <img src="images/work-3.jpg" alt="" />
           </div>
-          <div class="image">
+          <div class="image branding">
             <img class="special" src="images/work-4.jpg" alt="" />
           </div>
-          <div class="image">
+          <div class="image web">
             <img src="images/work-5.jpg" alt="" />
           </div>
-          <div class="image">
+          <div class="image web">
             <img class="special" src="images/work-6.jpg" alt="" />
+          </div>
+          <!-- illustration -->
+          <div class="image illustration">
+            <img src="images/workshop/illustration-1.png" alt="" />
+          </div>
+          <div class="image illustration">
+            <img src="images/workshop/illustration-2.png" alt="" />
+          </div>
+          <div class="image illustration">
+            <img src="images/workshop/illustration-3.png" alt="" />
+          </div>
+          <div class="image illustration">
+            <img src="images/workshop/illustration-4.png" alt="" />
+          </div>
+          <div class="image illustration">
+            <img src="images/workshop/illustration-5.png" alt="" />
+          </div>
+          <div class="image illustration">
+            <img src="images/workshop/illustration-6.png" alt="" />
           </div>
         </div>
         <span class="more">show me more</span>
@@ -185,5 +218,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
