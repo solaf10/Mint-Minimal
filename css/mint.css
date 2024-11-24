@@ -132,6 +132,7 @@ header .burger-icon {
 header .icon {
   font-size: 20px;
   cursor: pointer;
+  transition: 0.3s;
 }
 /* landing */
 .landing {
@@ -211,6 +212,7 @@ header .icon {
   right: 0px;
   border-style: solid;
   border-width: 10px;
+  transition: 0.3s;
   border-color: transparent transparent antiquewhite transparent;
 }
 .work .container .shuffle .filter .drop-down div {
@@ -493,6 +495,7 @@ footer p span {
   header .burger-icon {
     display: inline;
     transition: 0.3s;
+    cursor: pointer;
   }
   header .container .links {
     display: none;
@@ -535,14 +538,26 @@ footer p span {
   }
 }
 @media (max-width: 545px) {
+  .work .container .shuffle .filter {
+    flex-grow: 0;
+  }
   .main-title {
     font-size: 36px;
   }
   .work .container .shuffle {
     justify-content: center;
+    flex-wrap: wrap;
+  }
+  .landing .container {
+    height: 100%;
   }
   .work .container .shuffle li:last-child {
     display: none;
+  }
+  .partners .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
   }
   .partners .container .image img {
     width: 50px;
@@ -555,6 +570,10 @@ footer p span {
   }
   footer {
     font-size: 12px;
+    padding: 0px;
+  }
+  footer .container {
+    padding: 20px;
   }
   footer .logo {
     display: none;

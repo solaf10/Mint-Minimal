@@ -104,8 +104,13 @@ shuffle.addEventListener("click", (e) => {
     dropDown.style.display = "block";
   }
 });
-dropDown.addEventListener("mouseleave", (e) => {
-  dropDown.style.display = "none";
+document.addEventListener("click", (e) => {
+  if (
+    !e.target.classList.contains("drop-down") &&
+    !e.target.classList.contains("filter") &&
+    !e.target.classList.contains("title")
+  )
+    dropDown.style.display = "none";
 });
 dropDown.addEventListener("click", (e) => {
   showCertainImages(content.length, content.reverse());
@@ -139,3 +144,16 @@ darkModeIcon.addEventListener("click", () => {
     document.body.classList.remove("dark");
   }
 });
+// slider
+/* const slides = document.querySelectorAll(".partners .image");
+let count = 0;
+setInterval(() => {
+  if (count > 0) {
+    count--;
+  } else {
+    count = slides.length - 1;
+  }
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.transform = `translateX(-${100 * count}%)`;
+  }
+}, 1000); */
